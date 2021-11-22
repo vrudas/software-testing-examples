@@ -1,2 +1,3 @@
 # software-testing
-Used for lectures, to teach students how to test their code by different approaches
+
+An educational project to teach students how to test their application code
