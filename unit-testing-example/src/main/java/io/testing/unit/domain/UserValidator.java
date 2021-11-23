@@ -1,4 +1,4 @@
-package io.testing.unit;
+package io.testing.unit.domain;
 
 public class UserValidator {
 
