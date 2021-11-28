@@ -39,12 +39,15 @@ class UserServiceTest {
 
     @Test
     void user_created_without_errors() {
+        //arrange - test initialisation + stubs/mocks creation
         var expectedUser = new User("id", "email", "password");
 
         when(userIdGenerator.generateId()).thenReturn("id");
 
+        //act - where the operation to be tested is performed
         User actualUser = userService.createUser("email", "password");
 
+        //assert - received result assertion + mocks verification
         assertEquals(expectedUser, actualUser);
     }
 
